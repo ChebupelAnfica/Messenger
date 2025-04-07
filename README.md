@@ -1,17 +1,21 @@
 Установка и запуск
 
 1.Клонируйте репозиторий:
+
 git clone https://github.com/yourusername/chat-app.git
 cd chat-app
 
 2.Соберите и запустите контейнеры:
+
 docker-compose up --build
 
 3.Приложение будет доступно по адресу:
+
 API: http://127.0.0.1:8000
 Swagger UI: http://127.0.0.1:8000/docs
 
 4.API
+
 GET /history/{chat_id}
 Получить историю сообщений по ID чата.
 Пример:
@@ -30,6 +34,7 @@ curl -X 'GET' 'http://127.0.0.1:8000/history/1?limit=5&offset=0'
 ]
 
 5.Тестирование
+
 Запустите тесты:
 pytest
 docker-compose exec app bash -c "PYTHONPATH=/app pytest /app/tests/test_main.py"
@@ -43,5 +48,6 @@ WebSocket:
 Реализована обработка статуса "прочитано".
 
 6.Контейнеризация:
+
 Приложение работает через Docker и Docker Compose.
 Запуск всех компонентов через docker-compose up.
