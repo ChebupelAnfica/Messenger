@@ -1,0 +1,13 @@
+fastapi~=0.115.12
+uvicorn
+sqlalchemy~=2.0.40
+asyncpg
+psycopg2-binary
+pydantic~=2.11.1
+alembic~=1.15.2
+python-jose
+pytest
+httpx
+dotenv~=0.9.9
+python-dotenv~=1.1.0
+
